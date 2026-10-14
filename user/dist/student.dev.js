@@ -6,7 +6,7 @@ var Student = require('../schema/student');
 
 var router = express.Router();
 
-var bcrypt = require('bcrypt');
+var bcrypt = require('bcryptjs');
 
 var jwt = require('jsonwebtoken');
 

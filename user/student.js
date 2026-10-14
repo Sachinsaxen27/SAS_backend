@@ -1,7 +1,7 @@
 const express=require('express')
 const Student=require('../schema/student')
 const router = express.Router();
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const fetchstudent=require('../middleware/fetchstudent')
 const {body,validationResult}=require('express-validator');
