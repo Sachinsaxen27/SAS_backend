@@ -1,6 +1,6 @@
 const mongoose=require("mongoose")
 
-const mongoURI="mongodb://127.0.0.1:27017/attendancemangament"
+const mongoURI=process.env.CONNECT_TO_DATABASE_URL||"mongodb://127.0.0.1:27017/attendancemangament"
  
 // mongoose.set('strictQuery', false)
 const connectToMongos =()=>{
